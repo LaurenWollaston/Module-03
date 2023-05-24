@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header" style="text-align: center">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="flexrow">
+          <span id="closeModalButton" class="close"></span>
+          <h2 style="text-align: start; padding: 15px">Password Generation</h2>
+          <div style="padding-top: 1.8%; padding-left: 1%">
+            <p>How many characters should your password contain?</p>
+          </div>
+          <div
+            class="slidecontainer"
+            style="padding-top: 2.8%; padding-left: 5%"
+          >
+            <input
+              type="range"
+              min="8"
+              max="128"
+              value="8"
+              class="slider"
+              id="passChars"
+            />
+            <span id="passCharValue">8</span>
+          </div>
+        </div>
+        <span id="warner">Select at least one of the following.</span>
+        <div class="flexrow">
+          <div class="checkboxContainer">
+            <input type="checkbox" id="lowercase" name="lowercase" value="lowercase">
+            <label for="lowercase"> Include a lower case letter</label><br>
+          </div>
+          <div class="checkboxContainer">
+          <input type="checkbox" id="uppercase" name="uppercase" value="uppercase">
+          <label for="uppercase"> Include an upper case letter</label><br>
+          </div>
+          <div class="checkboxContainer">
+            <input type="checkbox" id="number" name="number" value="number">
+            <label for="number"> Include an upper case letter</label><br>
+          </div>
+          <div class="checkboxContainer">
+            <input type="checkbox" id="specialChar" name="specialChar" value="specialChar">
+            <label for="specialChar"> Include an upper case letter</label><br>
+          </div>
+        </div>
+        <div class="flexrow centered">
+          <button id="submit" class="btn">Generate</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
