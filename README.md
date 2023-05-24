@@ -27,4 +27,4 @@ CC0
 ## Questions
 
 [Github](https://github.com/LaurenWollaston)
-[E-Mail](Laurenofw@gmail.com)
+[E-Mail](mailto:Laurenofw@gmail.com)
