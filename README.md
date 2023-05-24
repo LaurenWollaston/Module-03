@@ -8,7 +8,7 @@ It generates passwords using javascript code taking user inputs from a front-end
 
 Everything runs locally in a web browser deployed at github pages.
 
-## Deployed App:
+## Deployed App: [Github Pages](https://laurenwollaston.github.io/Module-03/)
 
 ## Demo
 ![Demonstration image of site functionality](./demo.PNG)
